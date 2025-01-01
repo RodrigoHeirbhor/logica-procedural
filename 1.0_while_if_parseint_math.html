@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <meta charset="UTF-8">
+    <meta name="width=device-width", initial-scale="1.0">
+    <title>Logica Procedural</title>
+    <head>
+        <h1>
+            Logica Procedural
+        </h1>
+    </head>
+    <body>
+        <script>
+
+            /*let entrada = 3;
+            if (entrada != 5) {
+            alert("não é 5");
+            alert("Este não entra sempre");
+            }*/
+
+            let numero = parseInt(Math.random() * 10)+1;
+            let entrada = -1;
+            while (entrada != numero) {
+                entrada = prompt("Entre com um número");
+                if(entrada != numero) alert("Você errou");
+            }
+            console.log (entrada)
+            alert("Você acertou");
+
+            /*número randomico entre 1 e 10
+            parseInt(Math.random() *10)+1*/
+
+        </script>
+    </body>
+</html>
