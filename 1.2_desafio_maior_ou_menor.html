@@ -8,7 +8,32 @@
 <h1>Desafio Maior ou Menor</h1>
 <body>
     <script>
-        
+        let n2;
+        let n1 = 7;
+        let entrada = prompt("Insira um número entre 1 e 10 para tentar adivinhar o número secreto");
+        while(entrada != n1) {
+            entrada = prompt("Digite um número novamente e te darei uma dica de maior ou menor");
+
+            if(entrada > n1) alert("Você errou, minha dica é " + entrada + " é maior que o número secreto, tente novamente");
+
+            if(entrada < n1) alert("Você errou, minha dica é " + entrada + " é menor que o número secreto, tente novamente")
+
+            if(entrada == n1) alert("Parabêns " + entrada + " é o número secreto!");
+        }
+          alert("Recarregue a pagina para reiniciar o jogo");
+           
+    
+
+
+        /*let n1 = 7;
+        let entrada = prompt("Insira um número");
+        while (entrada != n1) {
+            alert("Você errou, tente novamente")
+
+            entrada = prompt("Insira um número novamente");
+            
+            if (entrada == n1) alert("Parabêns você acertou, o número certo é " + n1);
+        }*/
     </script>
 </body>
 </html>
