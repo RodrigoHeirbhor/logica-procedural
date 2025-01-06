@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="width=device-width", initial-scale="1.0">
+        <title>
+            Desafio Math.random
+        </title>
+    </head>
+    <h1>
+        Desafio Math.random
+    </h1>
+    <body>
+        <script>
+            let numero = parseInt(Math.random() * 10) + 1;
+            let entrada = -1;
+            while(entrada != numero) {
+                entrada = prompt("Entre com um número para tentar acertar o número secreto");
+                if (entrada > numero) alert(entrada + " é maior que o número secreto");
+                if (entrada < numero) alert(entrada + " É menor que o número secreto");
+            }
+            alert("Você acertou, " + entrada + " é o número secreto");
+
+            console.log((Math.random() * 10) +1);
+
+        </script>
+    </body>
+</html>
