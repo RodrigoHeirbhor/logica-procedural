@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="UTF-8">
+<meta name="width=device-width", initial-scale="1.0">
+<title>Array com entrada do usuário</title>
+<head>
+<h1>Array com Entrada do Usuário</h1>
+</head>
+<body>
+    <script>
+            let total = prompt("Entre com o total de pontos");
+            let n = [];
+            for(let i = 0; i < total; i++) {
+                n[i] = parseInt(Math.random()*5) +1;
+            }
+
+            let entrada = -1;
+            let tentativas = 0;
+            while(total > 0) {
+                entrada = prompt("Entre com o número");
+                tentativas++;
+                let acertou = 0;
+                for(let i = 0; i < n.length; i++) {
+                    if(acertou == 0) {
+                        if(entrada == n[i]) {
+                           alert("Encontrei um número");
+                           n[i] = -1;
+                           total--;
+                           acertou = 1;
+                        }
+                    }
+                }
+                if (acertou == 0)
+                alert("Errou");
+            }
+            alert("Terminado em " + tentativas + " tentativas");
+    </script>
+</body>
+</html>
